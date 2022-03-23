@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">dietLogin</string>
+    <string name="welcome_to_healthvisor">Welcome to Healthvisor</string>
+    <string name="login_to_continue">Login to continue</string>
+</resources>
