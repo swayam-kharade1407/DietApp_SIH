@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "276113712109",
+    "firebase_url": "https://dietlogin-273fe-default-rtdb.firebaseio.com",
+    "project_id": "dietlogin-273fe",
+    "storage_bucket": "dietlogin-273fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276113712109:android:8d09fb53506903eccefde4",
+        "android_client_info": {
+          "package_name": "com.example.dietlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276113712109-imlq1ikqkv0apmc6gkik709cuve2ebmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDlzVqlZI273TTlaSO94XgWQSK_gDrKmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276113712109-imlq1ikqkv0apmc6gkik709cuve2ebmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

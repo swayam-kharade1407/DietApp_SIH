@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332897257463",
+    "firebase_url": "https://dietping-default-rtdb.firebaseio.com",
+    "project_id": "dietping",
+    "storage_bucket": "dietping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332897257463:android:8cabab6417280a449d50f2",
+        "android_client_info": {
+          "package_name": "com.example.dietlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332897257463-m4c5nqh8k704dpbf4jsguojrr56b2884.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaxsAoPRqxh6njc9bG95tEwdfTPCiylmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332897257463-m4c5nqh8k704dpbf4jsguojrr56b2884.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
