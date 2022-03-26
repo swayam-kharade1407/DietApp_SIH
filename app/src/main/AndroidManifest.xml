@@ -12,10 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DietLogin">
         <activity
-            android:name=".newDash"
-            android:exported="false"
-            android:label="@string/title_activity_new_dash"
-            android:theme="@style/Theme.DietLogin.NoActionBar" />
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".item_3"
+            android:exported="false" />
+        <activity
+            android:name=".item_2"
+            android:exported="false" />
+        <activity
+            android:name=".item_1"
+            android:exported="false" />
+        <activity
+            android:name=".calorie"
+            android:exported="false" />
+        <activity
+            android:name=".bmiactivity"
+            android:exported="false" />
+        <activity
+            android:name=".bmii"
+            android:exported="false" />
+        <activity
+            android:name=".navBar"
+            android:exported="false" />
         <activity
             android:name=".dashboard"
             android:exported="false" />
@@ -23,7 +42,7 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

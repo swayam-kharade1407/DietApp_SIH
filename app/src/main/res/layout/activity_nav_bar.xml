@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".navBar">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dash1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="398dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dash2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="181dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dash3" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="225dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/dash4" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="106dp"
+            android:layout_height="24dp"
+            android:layout_alignStart="@+id/imageButton1"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_alignEnd="@+id/imageButton3"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="-34dp"
+            android:layout_marginEnd="183dp"
+            android:text="Water Reminder" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="106dp"
+            android:layout_height="24dp"
+            android:layout_alignStart="@+id/imageButton1"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_alignEnd="@+id/imageButton3"
+            android:layout_marginStart="186dp"
+            android:layout_marginTop="-31dp"
+            android:layout_marginEnd="15dp"
+            android:text="Calorie Counter" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="106dp"
+            android:layout_height="24dp"
+            android:layout_alignStart="@+id/imageButton1"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_alignEnd="@+id/imageButton3"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="182dp"
+            android:layout_marginEnd="180dp"
+            android:text="BMI Calculator" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="106dp"
+            android:layout_height="24dp"
+            android:layout_alignStart="@+id/imageButton1"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_alignEnd="@+id/imageButton3"
+            android:layout_marginStart="201dp"
+            android:layout_marginTop="182dp"
+            android:layout_marginEnd="0dp"
+            android:text="Health Tips" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_View"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

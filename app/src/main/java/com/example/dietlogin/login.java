@@ -24,6 +24,9 @@ public class login extends AppCompatActivity {
     Button signupbutton, loginbutton;
     TextInputLayout username_var, password_var;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,23 +51,8 @@ public class login extends AppCompatActivity {
                     password_var.setErrorEnabled(false);
                     final String username_data = username_var.getEditText().getText().toString();
                     final String password_data = password_var.getEditText().getText().toString();
-
-                    FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-                    DatabaseReference databaseReference = firebaseDatabase.getReference().child("datauser");
-                    Query check_username = databaseReference.orderByChild("username").equalTo(username_data);
-                    check_username.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            if (dataSnapshot.exists()) {
-                                username_var.setError(null);
-                                username_var.setErrorEnabled(false);
-                                String check_password = dataSnapshot.child(username_data).child("password").getValue(String.class);
-
-                                if (Objects.equals(check_password, password_data)){
-                                    password_var.setError(null);
-                                    password_var.setErrorEnabled(false);
                                     Toast.makeText(getApplicationContext(),"Login Successfully",Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(getApplicationContext(),dashboard.class);
+                                    Intent intent = new Intent(getApplicationContext(),navBar.class);
                                     startActivity(intent);
                                     finish();
                                 }else {
@@ -73,24 +61,10 @@ public class login extends AppCompatActivity {
                             }else {
                                 username_var.setError("User Does not Exist");
                             }
-                        }
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
-
-                }
-                else {
-                    password_var.setError("Please Enter Password");
-                }
-            }
-            else {
-                username_var.setError("Please Enter the Username");
-            }
-        });
 
 
+
+                });
         signupbutton.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(),SignUp.class);
             startActivity(intent);
