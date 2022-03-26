@@ -37,7 +37,7 @@ A diet recall is a dietary assessment tool that consist of a structured intervie
 
 
 ## Links
-GitHub Repo link: 
+GitHub Repo link: https://github.com/swayam-kharade1407/DietApp_SIH.git
 ## Technology stack
     1. Java
     2. XML
